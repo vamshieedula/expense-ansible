@@ -3,7 +3,7 @@
   hosts: backend
   vars:
     login_host: db.eedula.shop
-    login_password: ExpenseApp@1
+    mysql_root_password: ExpenseApp@1
   tasks:
     - name: disable defult nodejs
       ansible.builtin.command: dnf module disable nodejs -y
